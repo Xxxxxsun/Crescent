@@ -19,8 +19,8 @@ pip install -r requirements.txt
 
 ## 🧠 Data Generation
 The `scripts/` directory contains two data generation scripts:
-- `generate_llama2.py`: Uses **Llama-2-7B-Chat** for data generation
-- `generate_llama3.py`: Uses **Llama-3-8B-Instruct** for mathematical data generation
+- `llama2_7b.sh`: Uses **Llama-2-7B-Chat** for mathematical data generation
+- `llama3_8b.sh`: Uses **Llama-3-8B-Instruct** for mathematical data generation
 
 Pre-generated datasets are available on Hugging Face: (Coming soon...)
 
