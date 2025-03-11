@@ -26,9 +26,21 @@ Pre-generated datasets are available on Hugging Face: (Coming soon...)
 
 ## 🎯 Fine-tuning
 We use [Open-Instruct](https://github.com/allenai/open-instruct) for model fine-tuning. Complete training parameters can be found in Section 3.1 of our paper.
+To convert the generated data into the SFT compatible format: 
+1. First execute the initial preprocessing script:
+```bash
+python SFT_dataset_process/convert2shargpt.py
+```
+2. Then run the final formatting script:
+```bash
+python SFT_process/format_convert.py
+```
+
+This two-stage processing pipeline will structure the raw generated data into the `instruction-input-output` format required for open-instruct SFT training.
+
 
 ## 📊 Evaluation
-Evaluation is performed using the [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness):
+Evaluation is performed using the [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness).
 
 
 
